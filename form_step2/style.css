@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+/* Outer background with dark blue color */
+.background {
+    background-color: #002147;  /* Dark blue background */
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+/* Inner rectangular box */
+.container {
+    width: 400px;
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.row {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.column {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    margin-right: 10px;
+}
+
+.column:last-child {
+    margin-right: 0;
+}
+
+/* Icon styling */
+.icon {
+    margin-right: 10px;
+    font-size: 16px;  /* Set uniform size for all icons */
+    color: #007bff;
+    width: 16px;      /* Add fixed width for consistency */
+    height: 16px;     /* Add fixed height for consistency */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.password-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+/* Make the input fields rounded */
+input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 25px;  /* Rounded input fields */
+    max-width: 160px;
+    min-width: 100px;
+    box-sizing: border-box;
+}
+
+/* Style for the toggle button (SVG image) */
+.password-toggle {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    width: 24px;   /* Set a size for the SVG */
+    height: 24px;
+}
+
+/* Rounded Submit Button */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #006400;  /* Dark Green Background */
+    border: none;
+    border-radius: 25px;  /* Fully rounded corners for the button */
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #004b23;  /* Darker green when hovered */
+}

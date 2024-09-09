@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+/* Outer background with dark blue color */
+.background {
+    background-color: #002147;  /* Dark blue background */
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+/* Inner rectangular box */
+.container {
+    width: 800px;  /* Adjust width as needed */
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-sizing: border-box;  /* Ensure padding is included in width */
+}
+
+/* Flex row styling */
+.row {
+    display: flex;
+    margin-bottom: 20px;  /* Margin for spacing between rows */
+}
+
+.column {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    position: relative;  /* For absolute positioning of icon */
+}
+
+.column:last-child {
+    margin-right: 0;  /* Remove margin from last column */
+}
+
+.icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    color: #999;  /* Icon color */
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px 10px 10px 40px;  /* Add padding to the left to make space for the icon */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+/* Login methods section styling */
+.login-methods {
+    margin-top: 20px;
+}
+
+.login-methods-header {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.login-methods .row {
+    display: flex;
+    justify-content: space-between; /* Space out the radio buttons evenly */
+}
+
+.login-methods label {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-right: 5px;
+}
+
+.login-methods label:last-child {
+    margin-right: 0;  /* Remove margin from the last label */
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* Checkbox styling */
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;  /* Center horizontally */
+    margin-top: 20px;
+}
+
+.checkbox-container input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.checkbox-container label {
+    font-size: 16px;
+}
+
+/* Rounded Submit Button */
+button {
+    width: 100%;
+    padding: 12px;  /* Increased padding for better visibility */
+    background-color: #006400;  /* Dark Green Background */
+    border: none;
+    border-radius: 25px;  /* Fully rounded corners for the button */
+    color: white;
+    font-size: 18px;  /* Slightly larger font size */
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #004b23;  /* Darker green when hovered */
+}
